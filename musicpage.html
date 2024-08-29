@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<p>Listen to your downloaded songs: <a href="freesongs.html">Click here</a></p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Lovers | Home</title>
+    <style>
+
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 40;
+            padding: 100;
+            color: #f0ebeb;
+            background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjg4Mi1zYXNpLTEzLmpwZw.jpg"); /* Replace with the actual image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-image: url("https://www.hollywoodreporter.com/wp-content/uploads/2022/12/Best-EOTY-Top-Songs-THR-Getty-H-2022.jpg"); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            color: white;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-btn {
+            background-color: #ff5e57;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #ff2d20;
+        }
+
+        /* Genres Section */
+        .genres-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .genres-section h2 {
+            margin-bottom: 30px;
+        }
+
+        .genres-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .genre-card {
+            background-color: #07191f;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .rock {
+            background-color: #f774ea;
+        }
+
+        .pop {
+            background-color: #edd51c;
+        }
+
+        .jazz {
+            background-color: #f78874;
+        }
+
+        .edm {
+            background-color: #1c96b8;
+        }
+
+        /* Artists Section */
+        .artists-section {
+            background-color: #74f799;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .artist-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .artist-card {
+            background-color: black;
+            border-radius: 10px;
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+        }
+
+        .artist-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: pink;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .social-media img {
+            width: 60px;
+            margin: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .genres-container, .artist-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .genre-card, .artist-card {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="overlay">
+            <h1>Welcome to Music Lovers</h1>
+            <p>Feel the Rhythm, Live the Beat</p>
+            <a href="#genres" class="cta-btn">Explore Genres</a>
+        </div>
+    </header>
+
+    <!-- Popular Genres Section -->
+    <section id="genres" class="genres-section">
+        <h2>Popular Genres</h2>
+        <div class="genres-container">
+            <div class="genre-card rock">
+                <h3>Rock</h3>
+                <p>Discover the best rock music from classic hits to new anthems.</p>
+            </div>
+            <div class="genre-card pop">
+                <h3>Pop</h3>
+                <p>Explore the latest and greatest pop music that rules the charts.</p>
+            </div>
+            <div class="genre-card jazz">
+                <h3>Jazz</h3>
+                <p>Immerse yourself in smooth and soulful jazz melodies.</p>
+            </div>
+            <div class="genre-card edm">
+                <h3>EDM</h3>
+                <p>Experience the energetic and pulsating beats of electronic music.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Artists Section -->
+    <section id="artists" class="artists-section">
+        <h2>Featured Artists</h2>
+        <div class="artist-cards">
+            <div class="artist-card">
+                <img src="https://w0.peakpx.com/wallpaper/825/416/HD-wallpaper-justin-bieber-concert-canadian-singer-usa.jpg" alt="Justin Bieber">
+                <h3>Justin Bieber</h3>
+                <p>Top Albums:Sorry Tour, Purpose, Yummy-yummy</p>
+            </div>
+            <div class="artist-card">
+                <img src="https://4kwallpapers.com/images/wallpapers/marshmello-live-concert-american-dj-3840x2160-393.jpg" alt="Marshmellow">
+                <h3>Marshmellow</h3>
+                <p>Top Albums: Summer End, Ice-cream , Love is you</p>
+            </div>
+            <div class="artist-card">
+                <img src="https://pbs.twimg.com/profile_images/1794763149360422913/NbcIzwWk_400x400.jpg" alt="Selena Gomez">
+                <h3>Selena Gomez</h3>
+                <p>Top Albums:Heart wants you, Samne Old Love</p>
+            </div>
+            <div class="artist-card">
+                <img src="https://wallpapers.com/images/hd/travis-scott-concert-77so7jvq2d74pgs9.jpg" alt="Travis Scott">
+                <h3>Travis Scott</h3>
+                <p>Top Albums:Baby Calm Dowm, Naughty Boy, Hazel eyes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/login.php/"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="40"></a>
+            <a href="https://x.com/i/flow/login"><img src="<img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg" alt="Twitter" width="40"></a>
+            <a href="https //www.instagram.com"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40"></a>
+        </div>
+        <p>&copy; 2024 Music Lovers. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
